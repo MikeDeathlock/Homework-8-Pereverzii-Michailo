@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Лют 22 2021 р., 11:11
+-- Час створення: Лют 22 2021 р., 21:04
 -- Версія сервера: 10.4.17-MariaDB
 -- Версія PHP: 8.0.1
 
@@ -47,7 +47,8 @@ INSERT INTO `products` (`id`, `title`, `price`, `image`, `description`, `created
 (5, 'Lenovo ThinkBook 15', 17015, 'https://img.telemart.ua/298538-465930/lenovo-thinkbook-15-20sm003sra-grey.jpg', 'Дисплей: 15.6″ (1920x1080, IPS)\r\nПроцессор: Intel Core i3-1005G1 (1.2–3.4 ГГц), 2 ядра\r\nОперативная память: 8 ГБ (DDR4)\r\nВнутренний накопитель: 256 ГБ (SSD)\r\nВидеокарта: Intel UHD Graphics', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (7, 'Lenovo V15 Iron Grey', 15999, 'https://img.telemart.ua/306540-470290/lenovo-v15-82c7000yra-iron-grey.jpg', 'Дисплей: 15.6″ (1920x1080, TN)\r\nПроцессор: AMD Ryzen 5 3500U (2.1–3.7 ГГц), 4 ядра\r\nОперативная память: 8 ГБ (DDR4)\r\nВнутренний накопитель: 256 ГБ (SSD)\r\nВидеокарта: AMD Radeon Graphics', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
 (9, 'Acer Nitro 5 AN515-54', 33735, 'https://img.telemart.ua/182924-377792/acer-nitro-5-an515-54-nhq59eu045-black.jpg', 'Дисплей: 15.6″ (1920x1080, IPS)\r\nПроцессор: Intel Core i7-9750H (2.6–4.5 ГГц), 6 ядер\r\nОперативная память: 16 ГБ (DDR4)\r\nВнутренний накопитель: 1000 + 256 ГБ (HDD + SSD)\r\nВидеокарта: NVIDIA GeForce GTX 1650\r\nГабариты: 363.4 x 255 x 25.9 мм\r\nВес: 2.5 кг', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
-(11, 'Asus E410MA-EB009 ', 10999, 'https://img.telemart.ua/348755-495480/asus-e410ma-eb009-90nb0q11-m17950-peacock-blue.jpg', 'Дисплей: 14″ (1920x1080, IPS)\r\nПроцессор: Intel Celeron N4020 (1.1–2.8 ГГц), 2 ядра\r\nОперативная память: 4 ГБ (DDR4)\r\nВнутренний накопитель: 128 ГБ (SSD)\r\nВидеокарта: Intel UHD Graphics 600', '0000-00-00 00:00:00', '0000-00-00 00:00:00');
+(11, 'Asus E410MA-EB009 ', 10999, 'https://img.telemart.ua/348755-495480/asus-e410ma-eb009-90nb0q11-m17950-peacock-blue.jpg', 'Дисплей: 14″ (1920x1080, IPS)\r\nПроцессор: Intel Celeron N4020 (1.1–2.8 ГГц), 2 ядра\r\nОперативная память: 4 ГБ (DDR4)\r\nВнутренний накопитель: 128 ГБ (SSD)\r\nВидеокарта: Intel UHD Graphics 600', '0000-00-00 00:00:00', '0000-00-00 00:00:00'),
+(13, 'Asus VivoBook 14 K413EA-EB554', 18599, 'https://img.telemart.ua/348571-495512/asus-vivobook-14-k413ea-eb554-90nb0rlf-m08600-indie-black.jpg', 'Дисплей: 14″ (1920x1080, IPS)\r\nПроцессор: Intel Core i5-1135G7 (2.4–4.2 ГГц), 4 ядра\r\nОперативная память: 8 ГБ (DDR4)\r\nВнутренний накопитель: 256 ГБ (SSD)\r\nВидеокарта: Intel Iris Xe Graphics', '2021-02-22 17:52:06', '2021-02-22 17:52:06');
 
 --
 -- Індекси збережених таблиць
@@ -67,7 +68,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT для таблиці `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
