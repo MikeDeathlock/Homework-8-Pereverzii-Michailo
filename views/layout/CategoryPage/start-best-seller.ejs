@@ -8,7 +8,7 @@
             <img class="card-img" src="<%= product.image %>" alt="">
             <ul class="card-product__imgOverlay">
               <li style="margin-top: 10px;"><a href="/update-product/<%= product.id %>" style="width: 37px; height: 37px; background-color: #8894ff; text-decoration: none; padding: 7px 12px; cursor: pointer; display: inline-block;" title="Update-product"><i class="fas fa-arrow-up" style="color: white; font-size: 15px; text-align: center;"></i></a></li>
-              <li><button title="Delete-product" name="delete"><i class="fas fa-trash-alt"></i></button></li>
+              <li><a href="/delete-product/<%= product.id %>" style="width: 37px; height: 37px; background-color: #8894ff; text-decoration: none; padding: 7px 12px; cursor: pointer; display: inline-block;" title="Delete-product"><i class="fas fa-trash-alt" style="color: white; font-size: 15px; text-align: center;"></i></a></li>
               <li><button><i class="ti-heart"></i></button></li>
             </ul>
           </div>

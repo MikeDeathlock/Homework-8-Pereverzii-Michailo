@@ -40,6 +40,8 @@ router.get("/update-product/:id", shopController.changeProduct);
 
 router.post("/update-product/:id", shopController.postNewUpdateProduct);
 
+router.get("/delete-product/:id", shopController.deleteProduct);
+
 // router.get("/change-product/:id", shopController.changeProduct);
 
 router.get("*", shopController.get404Page);

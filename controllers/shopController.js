@@ -99,10 +99,6 @@ exports.changeProduct = (req, res, next) => {
     .catch(err => console.log(err));
 }
 
-// exports.getNewUpdateProduct = (req, res, next) => {
-//     res.render("pages/updateProduct");    
-// }
-
 exports.postNewUpdateProduct = (req, res, next) => { 
     const id = req.params.id;
     const title = req.body.title;    
@@ -125,26 +121,20 @@ exports.postNewUpdateProduct = (req, res, next) => {
         res.redirect("/category");
     })
     .catch(err => console.log(err));
-
-    // const titleU = req.body.titleU;
-    // const priceU = req.body.priceU;
-    // const imageU = req.body.imageU;
-    // const descriptionU = req.body.descriptionU;
-
-    // Product.updateAttributes({
-    //     title: titleU,
-    //     price: priceU,
-    //     image: imageU,
-    //     description: descriptionU
-    // })
-    // .then((result) => {
-    //     console.log('Product updated');
-    //     return res.redirect("/category");
-    // })
-    // .catch(err => console.log(err));
 }
 
-
+exports.deleteProduct = (req, res, next) => {
+    const idD = req.params.id;
+    Product.destroy({
+        where: {
+            id: idD
+        }
+    })
+    .then((product) => {
+        res.redirect("/category");
+    })
+    .catch((err) => console.log(err));
+}
 
 exports.get404Page = (req, res, next) => {
     res.status(404).render("pages/404");
